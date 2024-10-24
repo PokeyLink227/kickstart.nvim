@@ -400,6 +400,11 @@ require('lazy').setup({
           ['ui-select'] = {
             require('telescope.themes').get_dropdown(),
           },
+          undo = {
+            layout_config = {
+              preview_width = 0.65,
+            },
+          },
         },
       }
 
