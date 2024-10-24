@@ -439,6 +439,15 @@ require('lazy').setup({
         builtin.find_files { cwd = vim.fn.stdpath 'config' }
       end, { desc = '[S]earch [N]eovim files' })
     end,
+
+    {
+      'jiaoshijie/undotree',
+      dependencies = 'nvim-lua/plenary.nvim',
+      config = true,
+      keys = { -- load the plugin only when using it's keybinding:
+        { '<leader>u', "<cmd>lua require('undotree').toggle()<cr>" },
+      },
+    },
   },
 
   -- LSP Plugins
