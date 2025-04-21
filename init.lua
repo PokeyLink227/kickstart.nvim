@@ -119,9 +119,9 @@ vim.opt.showmode = false
 --  Schedule the setting after `UiEnter` because it can increase startup-time.
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
-vim.schedule(function()
-  vim.opt.clipboard = 'unnamedplus'
-end)
+-- vim.schedule(function()
+--   vim.opt.clipboard = 'unnamedplus'
+-- end)
 
 -- Enable break indent
 vim.opt.breakindent = true
@@ -626,7 +626,7 @@ require('lazy').setup({
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
         clangd = {
-          cmd = { 'clangd', '--path-mappings=/geekos=/home/thomas/Downloads/geekos', '--enable-config' },
+          cmd = { 'clangd', '--path-mappings=/geekos=/home/thomas/Documents/umd-homework/2024/cmsc412/geekos', '--enable-config' },
         },
         -- gopls = {},
         -- pyright = {},
