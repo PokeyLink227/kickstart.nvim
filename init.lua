@@ -160,7 +160,7 @@ vim.opt.inccommand = 'split'
 vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
-vim.opt.scrolloff = 8
+vim.opt.scrolloff = 6
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
@@ -629,7 +629,7 @@ require('lazy').setup({
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
         clangd = {
-          cmd = { 'clangd', '--path-mappings=/geekos=/home/thomas/Documents/umd-homework/2024/cmsc412/geekos', '--enable-config' },
+          cmd = { 'clangd', '--path-mappings=/geekos=/home/thomas/Documents/umd-homework/2024/cmsc412/p5/geekos', '--enable-config' },
         },
         -- gopls = {},
         -- pyright = {},
@@ -993,3 +993,5 @@ require('lazy').setup({
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+
+vim.cmd 'highlight Normal ctermbg=NONE guibg=NONE'
